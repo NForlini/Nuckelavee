@@ -1,0 +1,36 @@
+#Nina Forlini
+#Module 6 Milestone
+#sample dictionary
+rooms = {
+        'Great Hall': {'South': 'Bedroom'},
+        'Bedroom': {'North': 'Great Hall', 'East': 'Cellar'},
+        'Cellar': {'West': 'Bedroom'}
+    }
+
+# players starting position in great hall
+player_pos = 'Great Hall'
+
+# Define a function to run the game.
+def play_game():
+    # Prevent out-of-scope errors by marking the variable as global.
+    global player_pos
+
+    # while loop for the games function with various inputs
+    while True:
+        # Output a prompt to the user and capture their input. Modify the input to prevent case-sensitivity.
+        user_input = input(f"You are in the {player_pos}. What is your command?")
+        user_input = user_input.capitalize()
+        if user_input == "Quit" or user_input == "Exit":
+            print('Thanks for playing. Bye!')
+            quit()
+        if user_input in rooms[player_pos]:
+            player_pos = rooms[player_pos][user_input]
+            print(f'You have entered the {player_pos}.')
+        elif (user_input == "North") or (user_input == "South") or (user_input == "East") or (user_input == "West"):
+            print(f"You can't go that way!")
+        else:
+            print('Invalid command. Please enter a cardinal direction or use "quit" or "exit" to end the game.')
+
+# Start
+if __name__ == "__main__":
+    play_game()

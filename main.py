@@ -120,8 +120,7 @@ while user_input != "open door" or user_input != "open right door":
         inv.append("matches")
     elif user_input == "open door" or user_input == "open right door":
         print("You open the door, it leads to another room on this floor.\n")
-        break
-        player_location = rooms["Floor 2"][1]############################
+        player_location = rooms["Floor 2"][1]
     else:
         print("This is not an option.")
 
@@ -173,7 +172,6 @@ while user_input != "open door" or user_input != "open left door":
         inv.append("cloak")
     elif user_input == "open door" or "open left door":
         print("You open the door, let out into the next room\n")
-        break
         player_location = rooms["Floor 3"][1]
     else:
         print("This is not an option.")
@@ -201,7 +199,6 @@ while user_input != "open door" or user_input != "open left door":
     elif user_input == "open door" or "open left door":
         print("You climb the creaky stairs and are let out into an open room\n"
               "It looks to be split into two rooms\n")
-        break
         player_location = rooms["Floor 4"][0]
     else:
         print("This is not an option.")
@@ -235,7 +232,6 @@ while user_input != "open door" or user_input != "open right door":
         inv.append("dry seaweed")
     elif user_input == "open door" or "open right door":
         print("You open the door, let out into the next room.\n")
-        break
         player_location = rooms["Floor 4"][1]
     else:
         print("This is not an option.")
@@ -262,7 +258,6 @@ while user_input != "open door" or user_input != "open right door":
         inv.append("bandages")
     elif user_input == "open door" or "open right door":
         print("You climb the creaky stairs and are let out into an open room\n\n")
-        break
         player_location = rooms["Floor 5"][0]
     else:
         print("This is not an option.")
@@ -286,7 +281,6 @@ while user_input != "open door" or user_input != "open right door":
     elif user_input == "go back" or "open right door":
         print("You open the door.\n")
         player_location = rooms["Floor 1"][0]
-        break
     else:
         print("This is not an option.")
 #decent

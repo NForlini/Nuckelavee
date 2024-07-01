@@ -1,5 +1,4 @@
 #Nina Forlini
-#sorry that this is both late and unfinished im sorry
 
 print("Hearing the chattering voices, you try to calm yourself. \n"
     "Slowly the voices seem to get smaller; further away. \n"
